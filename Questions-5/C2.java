@@ -1,0 +1,33 @@
+package soruCozumu_090821;
+
+public class C2 {
+
+	 /*     Write program as a Student class   that has instance variables name and address.
+	     *  Create a constructor that will initialize those variables. 
+	     *  Print name & address of given  student by the displayInfo method.
+	     *  
+	     *  Programý, örnek deðiþkenlerin (instance variables) adý ve adresi olan bir Student sýnýfý olarak yazýn.
+	     *   Bu deðiþkenleri baþlatacak bir kurucu --> constructor oluþturun. 
+	     *   DisplayInfo methodu  verilen öðrencinin adýný ve adresini yazdýrýn.
+	     */
+	    
+	    String name;
+	    String address;
+	    
+	    public C2(String name, String address) {
+	        super();
+	        this.name = name;
+	        this.address = address;
+	    }
+	    
+	    
+	    public static void main(String[] args) {
+	        C2 ogrnc= new C2("Tolga Demir","büyük dut aacýnýn altý");
+	        ogrnc.DisplayInfo();
+	        
+	    }
+	    private void DisplayInfo() {
+	        System.out.println(name+ " "+address);
+	}
+
+}
